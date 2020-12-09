@@ -25,6 +25,7 @@
     "@angular/router": "~9.1.12",
     "concat": "^1.0.3",
     "mat-theme-util": "^0.2.0",
+    "rxjs": "^6.6.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
