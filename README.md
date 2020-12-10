@@ -10,9 +10,9 @@ This library _should_ seamlessly integrate with most Angular Material applicatio
 - Angular Material
 - A good understanding of both.
 
-
 ### Package Versioning
-- Angular CLI: 8.1.3
+
+- Angular CLI: 10.2.7
 - Node: 12.6.
 
 ### Inspired by:
