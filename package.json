@@ -1,6 +1,6 @@
 {
-  "name": "mat-theme-util-solution",
-  "version": "0.2.2",
+  "name": "mat-theme-utility",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
