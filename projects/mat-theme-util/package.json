@@ -1,8 +1,8 @@
 {
-  "name": "mat-theme-util",
+  "name": "material-theme-util",
   "version": "1.0.0",
   "description": "Angular Material 10+ Helper Utility for managing Theme colors dynamically, and creating color palettes from single colors.",
-  "author": "Tim M. Burton & Dominque Cox<larohndale+mat-theme-util@gmail.com> (mailto:larohndale+mat-theme-util@gmail.com)",
+  "author": "Tim M. Burton & Dominque Cox<larohndale+material-theme-util@gmail.com> (mailto:larohndale+material-theme-util@gmail.com)",
   "peerDependencies": {
     "@angular/common": "^10.2.7",
     "@angular/core": "^10.2.7"
@@ -10,12 +10,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/larohndale/mat-theme-util.git"
+    "url": "https://github.com/larohndale/material-theme-util.git"
   },
-  "homepage": "https://github.com/larohndale/mat-theme-util/wiki",
+  "homepage": "https://github.com/larohndale/material-theme-util/wiki",
   "bugs": {
-    "url": "https://github.com/larohndale/mat-theme-util/issues",
-    "email": "larohndale+mat-theme-util-SUPPORT@gmail.com"
+    "url": "https://github.com/larohndale/material-theme-util/issues",
+    "email": "larohndale+material-theme-util-SUPPORT@gmail.com"
   },
   "dependencies": {
     "tslib": "^2.0.0"

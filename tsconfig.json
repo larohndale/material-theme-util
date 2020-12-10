@@ -20,10 +20,10 @@
     ],
     "paths": {
       "theme-util": [
-        "dist/mat-theme-util"
+        "dist/material-theme-util"
       ],
       "theme-util/*": [
-        "dist/mat-theme-util/*"
+        "dist/material-theme-util/*"
       ]
     }
   },

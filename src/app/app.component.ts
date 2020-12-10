@@ -1,20 +1,24 @@
 import { Component } from "@angular/core";
-import { ThemeUtilService } from '../../dist/mat-theme-util';
+import { ThemeUtilService } from "../../dist/material-theme-util";
 
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent {
   theme = {
     primary: "#5D5D5D",
     accent: "#d3d3d3",
-    warn: "#ff0000"
+    warn: "#ff0000",
   };
 
   constructor(private themeUtil: ThemeUtilService) {
-    this.themeUtil.initTheme(this.theme.primary, this.theme.accent, this.theme.warn);
+    this.themeUtil.initTheme(
+      this.theme.primary,
+      this.theme.accent,
+      this.theme.warn
+    );
   }
 
   updatePrimary() {
