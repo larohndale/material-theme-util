@@ -25,7 +25,7 @@
     "@angular/router": "~10.2.3",
     "concat": "^1.0.3",
     "material-theme-util": "^0.2.0",
-    "rxjs": "^6.6.3",
+    "rxjs": "^6.6.2",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
