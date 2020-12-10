@@ -17,6 +17,9 @@
     "url": "https://github.com/tmburt04/mat-theme-util/issues",
     "email": "timmichaelburton+mat-theme-util-SUPPORT@gmail.com"
   },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
   "keywords": [
     "Angular",
     "Material",
