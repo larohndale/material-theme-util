@@ -18,7 +18,11 @@
     "email": "larohndale+material-theme-util-SUPPORT@gmail.com"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "@angular/common": "^10.2.3",
+    "@angular/core": "^10.2.3",
+    "rxjs": "^6.6.3",
+    "tslib": "^2.0.0",
+    "zone.js": "^0.10.3"
   },
   "keywords": [
     "Angular",
