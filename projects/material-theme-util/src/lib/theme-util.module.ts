@@ -1,4 +1,4 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
+import { NgModule } from "@angular/core";
 import { PalettePickerComponent } from "./palette-picker.component";
 import { ColorPickerComponent } from "./color-picker/color-picker.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
