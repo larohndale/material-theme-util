@@ -15,7 +15,6 @@ import { FormsModule } from "@angular/forms";
     BrowserModule,
     ThemeUtilModule,
     MatToolbarModule,
-    BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
   ],
