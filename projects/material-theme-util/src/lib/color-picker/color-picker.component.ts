@@ -3,7 +3,8 @@ import {
   Input,
   Output,
   EventEmitter,
-  forwardRef
+  forwardRef,
+  Directive,
 } from "@angular/core";
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 import { REGEX } from "../../globalizer/color-models/formater.util";
@@ -15,9 +16,9 @@ import { REGEX } from "../../globalizer/color-models/formater.util";
     {
       provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => ColorPickerComponent),
-      multi: true
-    }
-  ]
+      multi: true,
+    },
+  ],
 })
 export class ColorPickerComponent implements ControlValueAccessor {
   regex: string = REGEX.HEX.TEST;
@@ -54,7 +55,7 @@ export class ColorPickerComponent implements ControlValueAccessor {
   }
 
   updateRGB(str: string): void {
-    const parse = hex => parseInt(hex, 16);
+    const parse = (hex) => parseInt(hex, 16);
     const valid = new RegExp(REGEX.HEX.TEST).test(str);
     if (valid) {
       this._hexColor = str;
@@ -69,7 +70,7 @@ export class ColorPickerComponent implements ControlValueAccessor {
     this.onChg(this.hexColor);
   }
 
-  parseHex = v => {
+  parseHex = (v) => {
     if (v != null) {
       if (typeof v === "string") {
         v = parseInt(v);

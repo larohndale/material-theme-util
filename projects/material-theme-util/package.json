@@ -1,11 +1,14 @@
 {
   "name": "material-theme-util",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Angular Material 10+ Helper Utility for managing Theme colors dynamically, and creating color palettes from single colors.",
   "author": "Tim M. Burton & Dominque Cox<larohndale+material-theme-util@gmail.com> (mailto:larohndale+material-theme-util@gmail.com)",
   "peerDependencies": {
     "@angular/common": "^10.2.3",
-    "@angular/core": "^10.2.3"
+    "@angular/core": "^10.2.3",
+    "rxjs": "^6.6.3",
+    "tslib": "^2.0.0",
+    "zone.js": "^0.10.3"
   },
   "license": "MIT",
   "repository": {
@@ -16,13 +19,6 @@
   "bugs": {
     "url": "https://github.com/larohndale/material-theme-util/issues",
     "email": "larohndale+material-theme-util-SUPPORT@gmail.com"
-  },
-  "dependencies": {
-    "@angular/common": "^10.2.3",
-    "@angular/core": "^10.2.3",
-    "rxjs": "^6.6.3",
-    "tslib": "^2.0.0",
-    "zone.js": "^0.10.3"
   },
   "keywords": [
     "Angular",
