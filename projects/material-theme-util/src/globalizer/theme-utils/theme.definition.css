@@ -1,0 +1,49 @@
+/*
+    Sets the base theme and global values
+    until the client theme is loaded from the Config Service
+*/
+body {
+  --P-50: #69b7fc;
+  --P-100: #1e94fa;
+  --P-200: #0477dc;
+  --P-300: #035196;
+  --P-400: #024178;
+  --P-500: #02315a;
+  --P-600: #01213c;
+  --P-700: #01101e;
+  --P-800: #000000;
+  --P-900: #000000;
+  --P-A100: #0472d2;
+  --P-A200: #035caa;
+  --P-A400: #022e55;
+  --P-A700: #01101e;
+  --A-50: #ffffff;
+  --A-100: #ffffff;
+  --A-200: #ffffff;
+  --A-300: #e1e3e5;
+  --A-400: #d1d4d6;
+  --A-500: #c1c5c8;
+  --A-600: #b1b6b9;
+  --A-700: #a0a6ab;
+  --A-800: #90979d;
+  --A-900: #80888e;
+  --A-A100: #ffffff;
+  --A-A200: #ecedee;
+  --A-A400: #bec2c5;
+  --A-A700: #a0a6ab;
+  --W-50: #ffffff;
+  --W-100: #ffbdbd;
+  --W-200: #ff8585;
+  --W-300: #ff3d3d;
+  --W-400: #ff1f1f;
+  --W-500: #ff0000;
+  --W-600: #e00000;
+  --W-700: #c20000;
+  --W-800: #a30000;
+  --W-900: #850000;
+  --W-A100: #ff7a7a;
+  --W-A200: #ff5252;
+  --W-A400: #fa0000;
+  --W-A700: #c20000;
+}
+/*# sourceMappingURL=theme.definition.css.map */

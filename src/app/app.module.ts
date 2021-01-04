@@ -3,8 +3,10 @@ import { NgModule } from "@angular/core";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppComponent } from "./app.component";
-import { ThemeUtilService } from "../../projects/material-theme-util/src/lib/theme-util.service";
-import { ThemeUtilModule } from "../../projects/material-theme-util/src/lib/theme-util.module";
+import {
+  ThemeUtilModule,
+  ThemeUtilService,
+} from "../../dist/material-theme-util";
 import { FormsModule } from "@angular/forms";
 
 @NgModule({
