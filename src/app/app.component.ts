@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { ThemeUtilService } from "../../dist/material-theme-util";
+import { ThemeUtilService } from "../../projects/material-theme-util/src/lib/theme-util.service";
 
 @Component({
   selector: "app-root",

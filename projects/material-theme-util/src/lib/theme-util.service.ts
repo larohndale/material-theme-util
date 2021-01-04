@@ -1,8 +1,9 @@
-import { Injectable } from "@angular/core";
+import { Directive, Injectable } from "@angular/core";
 import { Theme } from "../globalizer/theme-utils/theme.model";
 
+@Directive()
 @Injectable({
-  providedIn: "root"
+  providedIn: "root",
 })
 export class ThemeUtilService {
   private colorTheme: Theme;
