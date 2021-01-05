@@ -1,4 +1,11 @@
-import { Component, Input, forwardRef } from "@angular/core";
+import {
+  Component,
+  Input,
+  Output,
+  EventEmitter,
+  forwardRef,
+  Injectable,
+} from "@angular/core";
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 import { REGEX } from "../../globalizer/color-models/formater.util";
 @Component({
@@ -13,6 +20,7 @@ import { REGEX } from "../../globalizer/color-models/formater.util";
     },
   ],
 })
+@Injectable()
 export class ColorPickerComponent implements ControlValueAccessor {
   regex: string = REGEX.HEX.TEST;
 

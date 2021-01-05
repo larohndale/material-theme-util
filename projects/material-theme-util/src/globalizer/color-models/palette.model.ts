@@ -1,12 +1,12 @@
 import { ColorType, Color, ColorFormat } from "./color.model";
 import { HSL } from "./color-format.model";
-import { ViewChild, ElementRef } from "@angular/core";
+import { ViewChild, ElementRef, Injectable } from "@angular/core";
 
 // Defines the public input type for the palette type.
 export enum PaletteType {
   P = "PRIMARY",
   A = "ACCENT",
-  W = "WARN"
+  W = "WARN",
 }
 
 class HueMap<T> {
@@ -15,7 +15,7 @@ class HueMap<T> {
 }
 
 class PaletteModel {
-  themeContainer = document.querySelector('body');
+  themeContainer = document.querySelector("body");
 
   private paletteType: string;
 
@@ -45,7 +45,7 @@ class PaletteModel {
     // Sets ColorMap (Primary/accent/warn)
     // if it exists
     if (!!this.colorMap && this.colorMap.length > 0) {
-      this.colorMap.map(v => {
+      this.colorMap.map((v) => {
         this[`_${v.ref}`] = v.value;
       });
     } else {
@@ -75,14 +75,14 @@ class PaletteModel {
       themeEl.style.setProperty(`--${t}-A400`, this._A400.toStr(format));
       themeEl.style.setProperty(`--${t}-A700`, this._A700.toStr(format));
     } else {
-      throw `No body element found!`
+      throw `No body element found!`;
     }
   };
 }
 
 export class Palette {
   palette: PaletteModel;
-  constructor(private color: Color, private type: ColorType) { }
+  constructor(private color: Color, private type: ColorType) {}
 
   public buildPalette = () => {
     return this.generatePalette(this.color);
@@ -125,7 +125,7 @@ export class Palette {
         const _color: Color = new Color(new HSL(h, s, map.value));
         return {
           ref: map.ref,
-          value: _color
+          value: _color,
         };
       }
     );
@@ -135,64 +135,64 @@ export class Palette {
 
   // Generates color palette based on the formula
   // provided by @leodido (https://github.com/leodido/material-palette)
-  private minimax = val => Math.min(100, Math.max(0, val));
+  private minimax = (val) => Math.min(100, Math.max(0, val));
 
   private generateAlterations = (l: number): HueMap<number>[] => [
     {
       ref: "50",
-      value: this.minimax(l + 52)
+      value: this.minimax(l + 52),
     },
     {
       ref: "100",
-      value: this.minimax(l + 37)
+      value: this.minimax(l + 37),
     },
     {
       ref: "200",
-      value: this.minimax(l + 26)
+      value: this.minimax(l + 26),
     },
     {
       ref: "300",
-      value: this.minimax(l + 12)
+      value: this.minimax(l + 12),
     },
     {
       ref: "400",
-      value: this.minimax(l + 6)
+      value: this.minimax(l + 6),
     },
     {
       ref: "500",
-      value: l
+      value: l,
     },
     {
       ref: "600",
-      value: this.minimax(l - 6)
+      value: this.minimax(l - 6),
     },
     {
       ref: "700",
-      value: this.minimax(l - 12)
+      value: this.minimax(l - 12),
     },
     {
       ref: "800",
-      value: this.minimax(l - 18)
+      value: this.minimax(l - 18),
     },
     {
       ref: "900",
-      value: this.minimax(l - 24)
+      value: this.minimax(l - 24),
     },
     {
       ref: "A100",
-      value: this.minimax(l + 24)
+      value: this.minimax(l + 24),
     },
     {
       ref: "A200",
-      value: this.minimax(l + 16)
+      value: this.minimax(l + 16),
     },
     {
       ref: "A400",
-      value: this.minimax(l - 1)
+      value: this.minimax(l - 1),
     },
     {
       ref: "A700",
-      value: this.minimax(l - 12)
-    }
+      value: this.minimax(l - 12),
+    },
   ];
 }

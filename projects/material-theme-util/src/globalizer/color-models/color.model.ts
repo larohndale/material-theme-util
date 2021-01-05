@@ -1,17 +1,18 @@
 import { ParseHEX, ParseHSL, ParseRGB } from "./formater.util";
 import { Hex, RGB, HSL } from "./color-format.model";
+import { Injectable } from "@angular/core";
 
 enum ColorType {
   PRIMARY = "P",
   ACCENT = "A",
-  WARN = "W"
+  WARN = "W",
 }
 
 // Defines the types of ColorFormats
 export enum ColorFormat {
   HEX = "HEX",
   RGB = "RGB",
-  HSL = "HSL"
+  HSL = "HSL",
 }
 
 class Color {

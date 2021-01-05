@@ -1,3 +1,4 @@
+import { Injectable } from "@angular/core";
 import { Color, ColorType } from "../color-models/color.model";
 import { Palette } from "../color-models/palette.model";
 
@@ -5,7 +6,7 @@ import { Palette } from "../color-models/palette.model";
 export enum DEFAULT_THEME {
   PRIMARY = "#023057",
   ACCENT = "#c1c5c8",
-  WARN = "#ff0000"
+  WARN = "#ff0000",
 }
 
 // Color Theme Class for updating,
