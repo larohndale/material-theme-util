@@ -1,25 +1,25 @@
-import { Injectable } from "@angular/core";
+import { Directive, Injectable } from "@angular/core";
 import { Theme } from "../globalizer/theme-utils/theme.model";
-
+@Directive()
 @Injectable({
-  providedIn: "root"
+  providedIn: "root",
 })
 export class ThemeUtilService {
-  private colorTheme: Theme;
+  public colorTheme: Theme;
 
   public initTheme(primary?: string, accent?: string, warn?: string) {
     this.colorTheme = new Theme(primary, accent, warn);
   }
 
-  public setPrimaryPalette(str) {
+  public setPrimaryPalette(str: string) {
     this.colorTheme.setPrimary(str);
   }
 
-  public setAccentPalette(str) {
+  public setAccentPalette(str: string) {
     this.colorTheme.setAccent(str);
   }
 
-  public setWarnPalette(str) {
+  public setWarnPalette(str: string) {
     this.colorTheme.setWarn(str);
   }
 }

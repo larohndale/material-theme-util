@@ -1,4 +1,4 @@
-import { Component, Input, forwardRef } from "@angular/core";
+import { Component, Input, forwardRef, Directive } from "@angular/core";
 import { ThemeUtilService } from "./theme-util.service";
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
 
@@ -10,9 +10,9 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from "@angular/forms";
     {
       provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => PalettePickerComponent),
-      multi: true
-    }
-  ]
+      multi: true,
+    },
+  ],
 })
 export class PalettePickerComponent implements ControlValueAccessor {
   isObjectInput: boolean;
@@ -67,7 +67,7 @@ export class PalettePickerComponent implements ControlValueAccessor {
     const theme = {
       primary: this._primary,
       accent: this._accent,
-      warn: this._warn
+      warn: this._warn,
     };
     return new BaseTheme(theme);
   }
@@ -82,7 +82,7 @@ export class PalettePickerComponent implements ControlValueAccessor {
 
   registerOnChange(fn: any): void {
     // Intercept the chgFn to return the type received initially
-    this.chgFn = val => {
+    this.chgFn = (val) => {
       const obj = this.isObjectInput ? val : JSON.stringify(val);
       fn(obj);
     };
@@ -100,7 +100,7 @@ export class PalettePickerComponent implements ControlValueAccessor {
 enum DEFAULT {
   P = "#D3D3D3",
   A = "#5D5D5D",
-  W = "#ff0000"
+  W = "#ff0000",
 }
 
 export class BaseTheme {

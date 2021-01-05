@@ -5,16 +5,14 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { BrowserModule } from "@angular/platform-browser";
 
-const COMPONENTS = [PalettePickerComponent, ColorPickerComponent];
-
 @NgModule({
-  declarations: COMPONENTS,
+  declarations: [PalettePickerComponent, ColorPickerComponent],
   imports: [
     FormsModule,
     BrowserAnimationsModule,
     BrowserModule,
     ReactiveFormsModule,
   ],
-  exports: COMPONENTS,
+  exports: [PalettePickerComponent, ColorPickerComponent],
 })
 export class ThemeUtilModule {}

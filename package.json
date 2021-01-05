@@ -1,6 +1,6 @@
 {
   "name": "material-theme-util",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -23,7 +23,6 @@
     "@angular/platform-browser": "~10.2.3",
     "@angular/platform-browser-dynamic": "~10.2.3",
     "@angular/router": "~10.2.3",
-    "material-theme-util": "^0.2.8",
     "concat": "^1.0.3",
     "rxjs": "^6.6.2",
     "tslib": "^2.0.0",
