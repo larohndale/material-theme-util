@@ -4,8 +4,8 @@
   "description": "Angular Material 10+ Helper Utility for managing Theme colors dynamically, and creating color palettes from single colors.",
   "author": "Tim M. Burton & Dominque Cox<larohndale+material-theme-util@gmail.com> (mailto:larohndale+material-theme-util@gmail.com)",
   "peerDependencies": {
-    "@angular/common": "^10.2.3",
-    "@angular/core": "^10.2.3"
+    "@angular/common": "^11.0.5",
+    "@angular/core": "^11.0.5"
   },
   "license": "MIT",
   "repository": {
