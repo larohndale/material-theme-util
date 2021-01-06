@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { Theme } from "../globalizer/theme-utils/theme.model";
 
 @Injectable({
-  providedIn: "root"
+  providedIn: "root",
 })
 export class ThemeUtilService {
   private colorTheme: Theme;
