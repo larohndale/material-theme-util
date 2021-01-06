@@ -37,7 +37,7 @@ This library _should_ seamlessly integrate with most Angular Material applicatio
 
 ```javascript
 ...
-import { ThemeUtilModule, ThemeUtilService } from 'mat-theme-util';
+import { ThemeUtilModule, ThemeUtilService } from 'material-theme-util';
 
 @NgModule({
   imports: [
@@ -68,7 +68,7 @@ export class AppModule { }
 ```scss
 @import "~@angular/material/theming";
 @include mat-core();
-@import "~mat-theme-util/theme-util";
+@import "~material-theme-util/theme-util";
 ```
 
 > No material theme should be imported, defined or set.
