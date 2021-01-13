@@ -1,6 +1,6 @@
 {
   "name": "material-theme-util-ng",
-  "version": "0.2.19",
+  "version": "0.2.22",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -25,7 +25,7 @@
     "@angular/platform-browser-dynamic": "^11.0.5",
     "@angular/router": "^11.0.5",
     "concat": "^1.0.3",
-    "material-theme-util": "^0.2.18",
+    "material-theme-util": "file:dist/material-theme-util/material-theme-util-0.2.22.tgz",
     "rxjs": "^6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
